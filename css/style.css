@@ -459,6 +459,12 @@ footer {
   line-height: 24px; /* 150% */
 }
 
+.label_img {
+  position: absolute;
+  top: -35px;
+  left: -40px;
+}
+
 @media screen and (max-width: 780px) {
   .banner_heading {
     color: var(--White, #fff) !important;
@@ -469,26 +475,28 @@ footer {
     line-height: 46px !important;
     margin-top: 1px !important;
   }
+  .label_img{
 
-  .heroSection{
-
-    height: 506px !important;
-
+    position: absolute;
+    top:0 !important;
+    left: 0 !important;
   }
 
-  .stockSection{
+  .heroSection {
+    height: 506px !important;
+  }
 
+  .stockSection {
     position: unset !important;
   }
 
-  .carousel-control-next, .carousel-control-prev{
-
+  .carousel-control-next,
+  .carousel-control-prev {
     position: unset !important;
     margin-top: 10px !important;
   }
 
-  body{
-
+  body {
     overflow-x: hidden !important ;
   }
 }
