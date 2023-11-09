@@ -53,6 +53,27 @@ if (function_exists('elementor_theme_register_locations')) {
 }
 
 
+// Create an array with the page names
+$page_titles = array(
+    'Home',
+    'Services',
+    'About',
+    'Contact'
+);
+
+// Loop through the array and create pages with the titles
+foreach ($page_titles as $title) {
+    $page_exists = get_page_by_title($title); // Check if the page exists already
+    if ($page_exists === null) {
+        $page = array(
+            'post_type'    => 'page',
+            'post_title'   => $title,
+            'post_status'  => 'publish',
+        );
+        wp_insert_post($page);
+    }
+}
+
   
 ?>
 
