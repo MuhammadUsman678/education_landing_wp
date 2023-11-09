@@ -74,6 +74,14 @@ foreach ($page_titles as $title) {
     }
 }
 
+function set_default_site_title($title) {
+    if (empty($title)) {
+        return 'Prop Fund Pros'; // Set your default site title here
+    }
+    return $title;
+}
+add_filter('pre_option_blogname', 'set_default_site_title');
+
   
 ?>
 
