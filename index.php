@@ -1,84 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>HTML 5 Boilerplate</title>
-    <link rel="stylesheet" href="style.css" />
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css"/>
-  </head>
-  <body>
-    <!--- Main Hero Section -->
-
-    <!-- Navbar -->
-
-    <div class="heroSection">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 col-4">
-            <nav class="navbar" id="header">
-              <div class="container-fluid">
-                <a href="javascript:void(0);"
-                  ><img src="images/logo.png" alt=""
-                /></a>
-              </div>
-            </nav>
-          </div>
-          <div class="col-lg-6 col-8 text-end">
-            <div class="icons_container mt-4">
-              <img src="/images/send.png" class="mx-2" alt="" />
-              <img src="/images/Frame.png" class="mx-2" alt="" />
-              <img src="/images/Frame2.png" class="mx-2" alt="" />
-              <img src="/images/Frame3.png" class="mx-2" alt="" />
-              <img src="/images/Frame4.png" class="mx-2" alt="" />
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="bannerSection">
-            <div class="col-lg-12 text-center">
-              <h1 class="banner_heading">
-                Acing Your Prop Firm Challenge Just Got Easier
-              </h1>
-              <p class="banner_description">
-                Benefit from the art of knowledge market manipulation
-              </p>
-              <button class="btn btn_theme">Sign Up</button>
-              <button class="btn btn_theme_outline ms-lg-3 ms-0 mt-lg-0 mt-3">Find out More</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+<?php
+if (function_exists('elementor_theme_do_location')) {
+    elementor_theme_do_location('home');
+} else {
+    get_header();
+    
+?>
 
     <!-- Currency Section -->
     <div class="stockSection py-4">
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg col-md-6 col-sm-6 text-center my-lg-0 my-3">
-            <img src="/images/Bitcoin.png" alt="bitcoin" />
+            <img src="<?php echo get_template_directory_uri(); ?>/images/Bitcoin.png" alt="bitcoin" />
             <h2 class="currency_name">Bitcoin 28327</h2>
             <p class="difference">-1 <span>(-0.00%)</span></p>
           </div>
           <div class="col-lg col-md-6 col-sm-6 text-center my-lg-0 my-3">
-            <img src="/images/flags.png" alt="bitcoin" />
+            <img src="<?php echo get_template_directory_uri(); ?>/images/flags.png" alt="bitcoin" />
             <h2 class="currency_name">EUR/USD 1.05342</h2>
             <p class="difference_positive">+0.07<span>(+0.01%)</span></p>
           </div>
           <div class="col-lg col-md-6 col-sm-6 text-center my-lg-0 my-3">
-            <img src="/images/Etherium.png" alt="bitcoin" />
+            <img src="<?php echo get_template_directory_uri(); ?>/images/Etherium.png" alt="bitcoin" />
             <h2 class="currency_name">Ethereum 28322</h2>
             <p class="difference">-1 <span>(-0.00%)</span></p>
           </div>
           <div class="col-lg col-md-6 col-sm-6 text-center my-lg-0 my-3">
-            <img src="/images/usd.png" alt="bitcoin" />
+            <img src="<?php echo get_template_directory_uri(); ?>/images/usd.png" alt="bitcoin" />
             <h2 class="currency_name">US 100 14887.5</h2>
             <p class="difference">-57.8 <span>(-0.39%)</span></p>
           </div>
           <div class="col-lg col-md-6 col-sm-6 text-center my-lg-0 my-3">
-            <img src="/images/Etherium.png" alt="bitcoin" />
+            <img src="<?php echo get_template_directory_uri(); ?>/images/Etherium.png" alt="bitcoin" />
             <h2 class="currency_name">Ethereum 28322</h2>
             <p class="difference">-8 <span>(-0.03%)</span></p>
           </div>
@@ -95,7 +48,7 @@
             <p class="title_video mt-5">
               This person is an avatar created using Artificial Intelligence
             </p>
-            <a href=""><img src="/images/down_gray.png" /></a>
+            <a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/down_gray.png" /></a>
           </div>
           <div class="col-12">
             <!-- 16:9 -->
@@ -125,16 +78,16 @@
           </div>
           <div class="col-lg-3 text-center mt-5">
             <div class="contai_div">
-              <img src="/images/ion_cart.png" alt="" />
+              <img src="<?php echo get_template_directory_uri(); ?>/images/ion_cart.png" alt="" />
               <h2 class="counter ms-2">01</h2>
               <p class="desc_counter">
                 1- Purchase your challenge with the Prop Firm of your
                 choice.(FTMO, MyForexFunds or others).
               </p>
             </div>
-            <img src="/images/arrow_down.png" class="my-4" alt="" />
+            <img src="<?php echo get_template_directory_uri(); ?>/images/arrow_down.png" class="my-4" alt="" />
             <div class="contain_div mt-5">
-              <img src="/images/tabler_award-filled.png" alt="" />
+              <img src="<?php echo get_template_directory_uri(); ?>/images/tabler_award-filled.png" alt="" />
               <h2 class="counter ms-2">02</h2>
               <p class="desc_counter">
                 1- Purchase your challenge with the Prop Firm of your
@@ -143,22 +96,22 @@
             </div>
           </div>
           <div class="col-lg-6 text-center mt-5">
-            <img src="/images/arrow_left.png" class="mt-4 d-lg-inline d-none" alt="arrow" />
-            <img src="/images/mobile.png" class="mt-5" alt="mobile" />
-            <img src="/images//arrow_right.png" class="mt-4 d-lg-inline d-none" alt="" />
+            <img src="<?php echo get_template_directory_uri(); ?>/images/arrow_left.png" class="mt-4 d-lg-inline d-none" alt="arrow" />
+            <img src="<?php echo get_template_directory_uri(); ?>/images/mobile.png" class="mt-5" alt="mobile" />
+            <img src="<?php echo get_template_directory_uri(); ?>/images//arrow_right.png" class="mt-4 d-lg-inline d-none" alt="" />
           </div>
           <div class="col-lg-3 text-center mt-5">
             <div class="contai_div">
-              <img src="/images/ion_card.png" alt="" />
+              <img src="<?php echo get_template_directory_uri(); ?>/images/ion_card.png" alt="" />
               <h2 class="counter ms-2">03</h2>
               <p class="desc_counter">
                 1- Purchase your challenge with the Prop Firm of your
                 choice.(FTMO, MyForexFunds or others).
               </p>
             </div>
-            <img src="/images/arrow_down.png" class="my-4" alt="" />
+            <img src="<?php echo get_template_directory_uri(); ?>/images/arrow_down.png" class="my-4" alt="" />
             <div class="contain_div mt-5">
-              <img src="/images/la_money-bill-alt.png" alt="" />
+              <img src="<?php echo get_template_directory_uri(); ?>/images/la_money-bill-alt.png" alt="" />
               <h2 class="counter ms-2">04</h2>
               <p class="desc_counter">
                 1- Purchase your challenge with the Prop Firm of your
@@ -176,11 +129,11 @@
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
-            <img src="/images/Line.png" alt="Line" />
+            <img src="<?php echo get_template_directory_uri(); ?>/images/Line.png" alt="Line" />
           </div>
           <div class="col-lg-3 text-center mt-5">
             <div class="contai_div">
-              <img src="/images/team.png" alt="" />
+              <img src="<?php echo get_template_directory_uri(); ?>/images/team.png" alt="" />
               <h2 class="values_title ms-2">Traders Team</h2>
               <p class="desc_counter">
                 A team of highly experienced and skilled traders. All with more
@@ -190,7 +143,7 @@
           </div>
           <div class="offset-lg-cutom col-lg-3 text-center mt-5">
             <div class="contai_div">
-              <img src="/images/risk.png" alt="" />
+              <img src="<?php echo get_template_directory_uri(); ?>/images/risk.png" alt="" />
               <h2 class="values_title ms-2">Traders Team</h2>
               <p class="desc_counter">
                 A team of highly experienced and skilled traders. All with more
@@ -200,7 +153,7 @@
           </div>
           <div class="offset-lg-cutom col-lg-3 text-center mt-5">
             <div class="contai_div">
-              <img src="/images/money.png" alt="" />
+              <img src="<?php echo get_template_directory_uri(); ?>/images/money.png" alt="" />
               <h2 class="values_title ms-2">Traders Team</h2>
               <p class="desc_counter">
                 A team of highly experienced and skilled traders. All with more
@@ -220,7 +173,7 @@
           <div class="col-12 text-center">
             <h2 class="why_choose_title mt-5">Why Work with Prop Fund Pros?</h2>
             <a href="javascript:void(0);">
-              <img src="/images/down_white.png" class="my-3" />
+              <img src="<?php echo get_template_directory_uri(); ?>/images/down_white.png" class="my-3" />
             </a>
           </div>
           <div class="col-12">
@@ -256,7 +209,7 @@
               How Verification Works in Prop Firm Challenges
             </h2>
             <a href="javascript:void(0);">
-              <img src="/images/down_white.png" class="my-3" />
+              <img src="<?php echo get_template_directory_uri(); ?>/images/down_white.png" class="my-3" />
             </a>
           </div>
           <div class="col-12">
@@ -289,7 +242,7 @@
               firm challenge.
             </p>
             <a href="javascript:void(0);">
-              <img src="/images/down_white.png" class="my-3" />
+              <img src="<?php echo get_template_directory_uri(); ?>/images/down_white.png" class="my-3" />
             </a>
           </div>
         </div>
@@ -345,27 +298,27 @@
       <div class="container">
         <div class="row">
           <!-- <div class="col-2">
-              <img src="/images/partner1 (1).png" alt="" />
+              <img src="<?php echo get_template_directory_uri(); ?>/images/partner1 (1).png" alt="" />
             </div>
             <div class="col-2"></div>
-            <img src="/images/partner1 (2).png" alt="" />
+            <img src="<?php echo get_template_directory_uri(); ?>/images/partner1 (2).png" alt="" />
             <div class="col-2">
-              <img src="/images/partner1 (3).png" alt="" />
+              <img src="<?php echo get_template_directory_uri(); ?>/images/partner1 (3).png" alt="" />
             </div> -->
           <div class="col-lg col-sm-12 col-md-12 text-center justify-content-center my-lg-0 my-3">
-            <img src="/images/partner1 (2).png" class="mt-4" alt="" />
+            <img src="<?php echo get_template_directory_uri(); ?>/images/partner1 (2).png" class="mt-4" alt="" />
           </div>
           <div class="col-lg col-sm-12 col-md-12 text-center justify-content-center my-lg-0 my-3">
-            <img src="/images/partner1 (1).png" alt="" />
+            <img src="<?php echo get_template_directory_uri(); ?>/images/partner1 (1).png" alt="" />
           </div>
           <div class="col-lg col-sm-12 col-md-12 text-center justify-content-center my-lg-0 my-3">
-            <img src="/images/partner1 (5).png" class="mt-4" alt="" />
+            <img src="<?php echo get_template_directory_uri(); ?>/images/partner1 (5).png" class="mt-4" alt="" />
           </div>
           <div class="col-lg col-sm-12 col-md-12 text-center justify-content-center my-lg-0 my-3">
-            <img src="/images/partner1 (4).png" class="mt-4 ms-4" alt="" />
+            <img src="<?php echo get_template_directory_uri(); ?>/images/partner1 (4).png" class="mt-4 ms-4" alt="" />
           </div>
           <div class="col-lg col-sm-12 col-md-12 text-center justify-content-center my-lg-0 my-3">
-            <img src="/images/partner1 (3).png" class="mt-4 ms-4" alt="" />
+            <img src="<?php echo get_template_directory_uri(); ?>/images/partner1 (3).png" class="mt-4 ms-4" alt="" />
           </div>
         </div>
       </div>
@@ -374,7 +327,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12 text-center mt-4">
-            <img src="/images/down_white.png" alt="" />
+            <img src="<?php echo get_template_directory_uri(); ?>/images/down_white.png" alt="" />
           </div>
           <div class="col-12 text-center">
             <h2 class="why_choose_heading mt-2">Headlines</h2>
@@ -413,19 +366,19 @@
       <div class="container">
         <div class="row">
           <div class="col-lg col-sm-12 col-md-12 text-center justify-content-center my-lg-0 my-3">
-            <img src="/images/partner2.png" class="mt-2" alt="" />
+            <img src="<?php echo get_template_directory_uri(); ?>/images/partner2.png" class="mt-2" alt="" />
           </div>
           <div class="col-lg col-sm-12 col-md-12 text-center justify-content-center my-lg-0 my-3">
-            <img src="/images/partner3.png" alt="" class="mt-2" />
+            <img src="<?php echo get_template_directory_uri(); ?>/images/partner3.png" alt="" class="mt-2" />
           </div>
           <div class="col-lg col-sm-12 col-md-12 text-center justify-content-center my-lg-0 my-3">
-            <img src="/images/partnernew.png" class="" alt="" />
+            <img src="<?php echo get_template_directory_uri(); ?>/images/partnernew.png" class="" alt="" />
           </div>
           <div class="col-lg col-sm-12 col-md-12 text-center justify-content-center my-lg-0 my-3">
-            <img src="/images/partnernew2.png" class="" alt="" />
+            <img src="<?php echo get_template_directory_uri(); ?>/images/partnernew2.png" class="" alt="" />
           </div>
           <div class="col-lg col-sm-12 col-md-12 text-center justify-content-center my-lg-0 my-3">
-            <img src="/images/parternew3.png" class="" alt="" />
+            <img src="<?php echo get_template_directory_uri(); ?>/images/parternew3.png" class="" alt="" />
           </div>
         </div>
       </div>
@@ -850,14 +803,14 @@
               For any questions or concerns or if you prefer to speak with one
               of our sales representative please contact our support team bellow
             </p>
-            <img src="/images/down_white.png" alt="" /><br />
+            <img src="<?php echo get_template_directory_uri(); ?>/images/down_white.png" alt="" /><br />
             <button class="btn btn_theme mt-3">
               Message us to get started
             </button>
           </div>
           <div class="col-12 text-center">
             <h2 class="contact_title mt-5">About Us</h2>
-            <img src="/images/down_white.png" class="my-2" alt="" />
+            <img src="<?php echo get_template_directory_uri(); ?>/images/down_white.png" class="my-2" alt="" />
 
             <p class="contact_description">
               Our company is based in the USA helping clients all over the world
@@ -878,55 +831,8 @@
       </div>
     </div>
 
-    <!-- Footer Section -->
+<?php
 
-    <footer class="py-3">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center mt-5">
-                    <img src="images/new_footer_logo.png" alt="">
-                </div>
-                <div class="col-lg-12 text-center my-5">
-                    <a href="javascript:void(0);" class="footer_links">Home</a>
-                    <a href="javascript:void(0);" class="footer_links">Service</a>
-                    <a href="javascript:void(0);" class="footer_links">About</a>
-                    <a href="javascript:void(0);" class="footer_links">Contact</a>
-                </div>
-                <div class="col-lg-6 text-lg-start text-center">
-                    <p class="copy_right">© 2020 Prop Fund Prop. All rights reserved.</p>
-                </div>
-                <div class="col-lg-6 text-lg-end text-center">
-                    <div class="icons_container">
-                      <img src="/images/send.png" class="mx-2" alt="" />
-                      <img src="/images/Frame.png" class="mx-2" alt="" />
-                      <img src="/images/Frame2.png" class="mx-2" alt="" />
-                      <img src="/images/Frame3.png" class="mx-2" alt="" />
-                      <img src="/images/Frame4.png" class="mx-2" alt="" />
-                    </div>
-                  </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="assets/js/jquery.min.js"></script>
-    <script>
-      $(".carousel .carousel-item").each(function () {
-        var minPerSlide = 2;
-        var next = $(this).next();
-        if (!next.length) {
-          next = $(this).siblings(":first");
-        }
-        next.children(":first-child").clone().appendTo($(this));
-
-        for (var i = 0; i < minPerSlide; i++) {
-          next = next.next();
-          if (!next.length) {
-            next = $(this).siblings(":first");
-          }
-          next.children(":first-child").clone().appendTo($(this));
-        }
-      });
-    </script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-  </body>
-</html>
+    get_footer();
+}
+?>

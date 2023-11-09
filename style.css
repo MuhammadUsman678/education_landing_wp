@@ -1,3 +1,16 @@
+/*
+Theme Name: Prop Fund Prop
+Theme URI: https://propfundpros.com
+Author: Prop Fund Prop
+Author URI: https://propfundpros.com
+Description: Educational Website
+Version: 1.0
+*/
+
+/* Add your CSS styles here */
+
+
+
 /* Utility Css */
 
 .btn_theme {
@@ -458,6 +471,11 @@ footer {
   font-weight: 400;
   line-height: 24px; /* 150% */
 }
+
+.contact_description{
+  font-size: 14px !important;
+}
+
 
 .label_img {
   position: absolute;
