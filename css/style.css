@@ -475,6 +475,13 @@ footer {
     line-height: 46px !important;
     margin-top: 1px !important;
   }
+
+  .contact_description{
+
+    font-size: 14px !important;
+
+  }
+
   .label_img{
 
     position: absolute;
