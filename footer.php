@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center mt-5">
-            <img src="<?php echo get_theme_mod('footer_logo_setting', get_template_directory_uri() . '/images/footer-logo.png'); ?>" alt="Footer Logo">
+            <img src="<?php echo get_theme_mod('footer_logo_setting', get_template_directory_uri() . '/images/new_footer_logo.png'); ?>" alt="Footer Logo">
             </div>
             <div class="col-lg-12 text-center my-5">
                 <?php

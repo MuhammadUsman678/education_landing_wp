@@ -22,7 +22,7 @@
                         <nav class="navbar" id="header">
                             <div class="container-fluid">
                                 <a href="<?php echo esc_url(home_url('/')); ?>">
-                                    <img src="<?php echo get_theme_mod('header_logo_setting', get_template_directory_uri() . '/images/header-logo.png'); ?>" alt="<?php bloginfo('name'); ?>">
+                                    <img src="<?php echo get_theme_mod('header_logo_setting', get_template_directory_uri() . '/images/logo.png'); ?>" alt="<?php bloginfo('name'); ?>">
                                 </a>
                             </div>
                         </nav>
