@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
+
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,12 +11,28 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css" />
     <link href="<?php echo get_template_directory_uri(); ?>/assets/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/font-awesome.min.css" />
+    <style>
+        .heroSection {
+            background-image: url('<?php echo get_template_directory_uri(); ?>/images/background_img.png');
+            background-size: cover;
+            height: 764px;
+            position: relative;
+            /* Additional styles */
+        }
+
+        .contactSection {
+            background-image: url('<?php echo get_template_directory_uri(); ?>/images/contactbg.png');
+            background-position: contain;
+        }
+    </style>
 </head>
+
 <body <?php body_class(); ?>>
     <!-- header -->
     <header>
-        <!--- Main Hero Section -->
-        <div class="heroSection">
+
+        <!-- Navbar -->
+        <div class="<?php echo (is_front_page()) ? 'isForHome' : '' ?>" id="mainHeader">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-4">
@@ -27,28 +44,28 @@
                             </div>
                         </nav>
                     </div>
-                    <div class="col-lg-6 col-8 text-end">
+                    <div class="col-lg-6 col-8 text-end mt-2 isForHome">
                         <div class="icons_container mt-4">
-                            <!-- Your icon images here -->
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/send.png" class="mx-2" alt="" />
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/Frame.png" class="mx-2" alt="" />
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/Frame2.png" class="mx-2" alt="" />
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/Frame3.png" class="mx-2" alt="" />
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/Frame4.png" class="mx-2" alt="" />
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="bannerSection">
-                        <div class="col-lg-12 text-center">
-                            <h1 class="banner_heading">
-                                Acing Your Prop Firm Challenge Just Got Easier
-                            </h1>
-                            <p class="banner_description">
-                                Benefit from the art of knowledge market manipulation
-                            </p>
-                            <button class="btn btn_theme">Sign Up</button>
-                            <button class="btn btn_theme_outline ms-lg-3 ms-0 mt-lg-0 mt-3">Find out More</button>
+                            <?php
+                            $social_media_sites = array('telegram', 'whatsapp', 'facebook', 'instagram', 'discord'); // Should match the settings
+
+                            foreach ($social_media_sites as $site) {
+                                $link = get_theme_mod($site . '_link');
+                                if (!empty($link)) {
+                                    $icon = str_replace('_', ' ', $site); // Example: WhatsApp becomes WhatsApp
+
+                                    echo '<a href="' . esc_url($link) . '" class="text-decoration-none">
+                                            <img src="' . get_template_directory_uri() . '/images/' . $site . '.png" class="mx-2" alt="' . $icon . '" />
+                                        </a>';
+                                } else {
+                            ?>
+                                    <a href="#" class="text-decoration-none">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/images/<?php echo $site ?>.png" class="mx-2" alt="" />
+                                    </a>
+                            <?php
+                                }
+                            }
+                            ?>
                         </div>
                     </div>
                 </div>

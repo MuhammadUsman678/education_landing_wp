@@ -77,12 +77,6 @@ Version: 1.0
 
 /* End Here */
 
-.heroSection {
-  background-image: url("/images/background_img.png");
-  background-size: cover;
-  height: 764px;
-  position: relative;
-}
 
 #header {
   background-color: transparent !important;
@@ -101,7 +95,7 @@ Version: 1.0
   font-style: normal;
   font-weight: 700;
   line-height: 82px; /* 113.889% */
-  margin-top: 121px;
+  margin-top: 200px;
 }
 
 .banner_description {
@@ -429,10 +423,6 @@ Version: 1.0
   margin-bottom: 0px !important;
 }
 
-.contactSection {
-  background-image: url(/images/contactbg.png);
-  background-position: contain;
-}
 
 .contact_title {
   color: var(--White, #fff);
@@ -454,7 +444,18 @@ footer {
   background-color: #000000 !important;
 }
 
-.footer_links {
+
+
+.footer_links > ul {
+  display: inline-flex;
+}
+
+.footer_links > ul > li {
+  list-style: none;
+}
+
+
+.footer_links > ul > li > a {
   color: var(--gray-200, #eaecf0);
   font-size: 16px;
   font-style: normal;
@@ -463,6 +464,7 @@ footer {
   text-decoration: none;
   margin-right: 16px;
 }
+
 
 .copy_right {
   color: var(--gray-300, #d0d5dd);
@@ -483,6 +485,10 @@ footer {
   left: -40px;
 }
 
+.elementor-element[data-element_type="container"]{
+  padding:0px !important;
+}
+
 @media screen and (max-width: 780px) {
   .banner_heading {
     color: var(--White, #fff) !important;
@@ -491,7 +497,7 @@ footer {
     font-style: normal !important;
     font-weight: 700 !important;
     line-height: 46px !important;
-    margin-top: 1px !important;
+    margin-top: 130px !important;
   }
   .label_img{
 

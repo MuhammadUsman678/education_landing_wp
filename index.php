@@ -231,6 +231,9 @@ if (function_exists('elementor_theme_do_location')) {
         </div>
       </div>
     </div>
+
+
+    <!-- Our Offers -->
     <div class="why_us_single_section">
       <div class="container">
         <div class="row">
