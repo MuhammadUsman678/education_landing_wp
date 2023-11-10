@@ -264,9 +264,9 @@ class Plans_Widget extends Widget_Base
     <!-- Card Section -->
 
     <div class="container mt-5 mb-5 mx-auto text-center">
-      <div class="row">
+      <div class="row d-flex justify-content-center">
         <?php foreach ($settings['pro_list'] as $key=>$row) { ?>
-          <div class="col-lg-4 mt-lg-0 mt-5 mx-auto">
+          <div class="col-lg-4 mt-lg-0 mt-5 text-center">
             <div class="price_Card position-relative">
               <img src="<?php echo get_template_directory_uri(); ?>/images/label.png" class="label_img" alt="">
               <span class="heading text-center"> <?php echo $row['plan_title']; ?> </span>
@@ -284,9 +284,9 @@ class Plans_Widget extends Widget_Base
           </div>
         <?php }; ?>
       </div>
-      <div class="row">
+      <div class="row d-flex justify-content-center">
         <?php foreach ($settings['other_list'] as $row) { ?>
-          <div class="col-lg-4 mt-5 mx-auto">
+          <div class="col-lg-4 mt-5 text-center">
             <div class="price_Card_2">
               <span class="heading text-center"> <?php echo $row['plan_title']; ?> </span>
               <h3 class="price_title text-center"><?php echo $row['plan_price']; ?></h3>
