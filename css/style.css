@@ -88,7 +88,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 82px; /* 113.889% */
-  margin-top: 121px;
+  margin-top: 200px;
 }
 
 .banner_description {
@@ -378,6 +378,11 @@
   gap: 24px;
 }
 
+/* .notForHome{
+
+  background-color: #000;
+} */
+
 .heading {
   color: var(--Blue---500, #7d8dff);
   font-size: 18px;
@@ -473,7 +478,7 @@ footer {
     font-style: normal !important;
     font-weight: 700 !important;
     line-height: 46px !important;
-    margin-top: 1px !important;
+    margin-top: 130px !important;
   }
 
   .contact_description{
