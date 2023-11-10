@@ -467,7 +467,7 @@ footer {
 .label_img {
   position: absolute;
   top: -35px;
-  left: -40px;
+  left: -24px;
 }
 
 @media screen and (max-width: 780px) {
