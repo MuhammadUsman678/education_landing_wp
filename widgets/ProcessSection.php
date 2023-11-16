@@ -155,6 +155,7 @@ class PFP_Process_Widget extends Widget_Base
                 <div class="row">
                     <div class="col-12 text-center">
                         <h1 class="mt-5"><?php echo esc_html($settings['process_title']); ?></h1>
+						<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/down_gray.png" /></a>
                     </div>
                     <div class="col-lg-3 text-center mt-5">
                         <div class="contai_div">
@@ -202,7 +203,7 @@ class PFP_Process_Widget extends Widget_Base
 
 
         <!-- Our Core Values -->
-        <div class="coreValue pt-5">
+        <div class="coreValue pt-5 pb-5">
         <div class="container">
             <div class="row">
             <div class="col-12 text-center">

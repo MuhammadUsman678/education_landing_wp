@@ -147,8 +147,8 @@ class HeroSection extends Widget_Base
                             <p class="banner_description">
                                 <?php echo esc_html($settings['description']); ?>
                             </p>
-                            <button class="btn btn_theme">Sign Up</button>
-                            <button class="btn btn_theme_outline ms-lg-3 ms-0 mt-lg-0 mt-3">
+                            <button class="btn btn_theme me-4"">Sign Up</button>
+                            <button class="btn btn_theme_outline ">
                                 Find out More
                             </button>
                         </div>
@@ -158,11 +158,11 @@ class HeroSection extends Widget_Base
         </div>
 
         <!-- Currency Section -->
-        <div class="stockSection py-4">
+         <div class="stockSection py-3">
             <div class="container-fluid">
                 <div class="row">
                     <?php for ($i = 1; $i <= 5; $i++) { ?>
-                        <div class="col-lg col-md-6 col-sm-6 text-center my-lg-0 my-3">
+                        <div class="col-lg-<?php echo ($i==2) ? '3' : '2' ?> col-md-6 col-sm-6 text-center my-lg-0 my-3">
                             <img src="<?php echo esc_url($settings['currency_' . $i . '_image']['url']); ?>" alt="<?php echo esc_attr($settings['currency_' . $i . '_title']); ?>" />
                             <h2 class="currency_name"><?php echo esc_html($settings['currency_' . $i . '_title']); ?></h2>
                             <p class="difference"><?php echo esc_html($settings['currency_' . $i . '_content']); ?></p>

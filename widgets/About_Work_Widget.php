@@ -132,7 +132,7 @@ class About_Work_Widget extends Widget_Base {
                     </div>
                     <div class="col-12">
                         <p class="why_choose_description mt-3">
-                            <?php echo esc_html($settings['about_content']); ?>
+                            <?php echo $settings['about_content']; ?>
                         </p>
                     </div>
                 </div>
@@ -150,7 +150,7 @@ class About_Work_Widget extends Widget_Base {
                     </div>
                     <div class="col-12">
                         <p class="why_choose_description mt-3">
-                            <?php echo esc_html($settings['verification_content']); ?>
+                            <?php echo $settings['verification_content']; ?>
                         </p>
                     </div>
                 </div>

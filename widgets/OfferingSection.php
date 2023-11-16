@@ -334,19 +334,19 @@ class Offering_Widget extends Widget_Base
         <div class="our_partners py-3 mt-5 mb-3 justify-content-space-between">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg col-sm-12 col-md-12 text-center justify-content-center my-lg-0 my-3">
+                    <div class="col-lg col-sm-12 col-md-12 text-center justify-content-center my-lg-0 my-3 px-lg-0">
                         <img src="<?php echo esc_url($settings['client_image_1']['url']); ?>" class="mt-4" alt="" />
                     </div>
-                    <div class="col-lg col-sm-12 col-md-12 text-center justify-content-center my-lg-0 my-3">
+                    <div class="col-lg col-sm-12 col-md-12 text-center justify-content-center my-lg-0 my-3 px-lg-0">
                         <img src="<?php echo esc_url($settings['client_image_2']['url']); ?>" alt="" />
                     </div>
-                    <div class="col-lg col-sm-12 col-md-12 text-center justify-content-center my-lg-0 my-3">
+                    <div class="col-lg col-sm-12 col-md-12 text-center justify-content-center my-lg-0 my-3 px-lg-0">
                         <img src="<?php echo esc_url($settings['client_image_3']['url']); ?>" class="mt-4" alt="" />
                     </div>
-                    <div class="col-lg col-sm-12 col-md-12 text-center justify-content-center my-lg-0 my-3">
+                    <div class="col-lg col-sm-12 col-md-12 text-center justify-content-center my-lg-0 my-3 px-lg-0">
                         <img src="<?php echo esc_url($settings['client_image_4']['url']); ?>" class="mt-4 ms-4" alt="" />
                     </div>
-                    <div class="col-lg col-sm-12 col-md-12 text-center justify-content-center my-lg-0 my-3">
+                    <div class="col-lg col-sm-12 col-md-12 text-center justify-content-center my-lg-0 my-3 px-lg-0">
                         <img src="<?php echo esc_url($settings['client_image_5']['url']); ?>" class="mt-4 ms-4" alt="" />
                     </div>
                 </div>

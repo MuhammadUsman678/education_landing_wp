@@ -261,49 +261,87 @@ class Plans_Widget extends Widget_Base
       </div>
     </div>
 
-    <!-- Card Section -->
+        <!-- Card Section -->
 
     <div class="container mt-5 mb-5 mx-auto text-center">
-      <div class="row d-flex justify-content-center">
-        <?php foreach ($settings['pro_list'] as $key=>$row) { ?>
-          <div class="col-lg-4 mt-lg-0 mt-5 text-center">
-            <div class="price_Card position-relative">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/label.png" class="label_img" alt="">
-              <span class="heading text-center"> <?php echo $row['plan_title']; ?> </span>
-              <h3 class="price_title text-center"><?php echo $row['plan_price']; ?></h3>
-              <span class="service text-center"><?php echo $row['plan_slogan']; ?></span>
-              <img src="<?php echo get_template_directory_uri(); ?>/images/Line 45.png" />
-              <?php foreach ($row['desc'] as $data) { ?>
-                <p class="description text-start">
-                  <img src="<?php echo get_template_directory_uri(); ?>/images/check.png" class="me-1 me-lg-2" alt="" />
-                  <?php echo $data['list_title']; ?>
-                </p>
-              <?php }; ?>
-              <button class="btn btn_theme">Get Started</button>
+        <div class="row d-flex justify-content-center">
+          <?php foreach (array_slice($settings['other_list'], 0, 2) as $row) { ?>
+            <div class="col-lg-4 mt-5">
+                <div class="price_Card_2">
+                    <span class="heading text-center"> <?php echo $row['plan_title']; ?> </span>
+                    <h3 class="price_title text-center"><?php echo $row['plan_price']; ?></h3>
+                    <span class="service text-center"><?php echo $row['plan_slogan']; ?></span>
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/Line 45.png" />
+                    <?php foreach ($row['desc'] as $data) { ?>
+                        <div class="row">
+                            <div class="col-1">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/check.png" class="me-2 mb-2" alt="" />  
+                            </div>
+                            <div class="col-11">
+                            <p class="description text-start">
+                                <?php echo $data['list_title']; ?>
+                            </p>
+                            </div>
+                        </div>
+                    <?php }; ?>
+                    <button class="btn btn_theme">Get Started</button>
+                </div>
             </div>
-          </div>
-        <?php }; ?>
-      </div>
-      <div class="row d-flex justify-content-center">
-        <?php foreach ($settings['other_list'] as $row) { ?>
-          <div class="col-lg-4 mt-5 text-center">
-            <div class="price_Card_2">
-              <span class="heading text-center"> <?php echo $row['plan_title']; ?> </span>
-              <h3 class="price_title text-center"><?php echo $row['plan_price']; ?></h3>
-              <span class="service text-center"><?php echo $row['plan_slogan']; ?></span>
-              <img src="<?php echo get_template_directory_uri(); ?>/images/Line 45.png" />
-              <?php foreach ($row['desc'] as $data) { ?>
-                <p class="description text-start">
-                  <img src="<?php echo get_template_directory_uri(); ?>/images/check.png" class="me-2" alt="" />
-                  <?php echo $data['list_title']; ?>
-                </p>
+          <?php }; ?>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <?php foreach (array_slice($settings['other_list'], 2) as $row) { ?>
+                <div class="col-lg-4 mt-5">
+                    <div class="price_Card_2">
+                        <span class="heading text-center"> <?php echo $row['plan_title']; ?> </span>
+                        <h3 class="price_title text-center"><?php echo $row['plan_price']; ?></h3>
+                        <span class="service text-center"><?php echo $row['plan_slogan']; ?></span>
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/Line 45.png" />
+                        <?php foreach ($row['desc'] as $data) { ?>
+                            <div class="row">
+                                <div class="col-1">
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/check.png" class="me-2 mb-2" alt="" />  
+                                </div>
+                                <div class="col-11">
+                                <p class="description text-start">
+                                    <?php echo $data['list_title']; ?>
+                                </p>
+                                </div>
+                            </div>
+                        <?php }; ?>
+                        <button class="btn btn_theme">Get Started</button>
+                    </div>
+                </div>
               <?php }; ?>
-              <button class="btn btn_theme_dark">Get Started</button>
+        </div>
+        <div class="row d-flex justify-content-center mt-lg-5">
+          <?php foreach ($settings['pro_list'] as $key=>$row) { ?>
+            <div class="col-lg-4 mt-lg-0 mt-5 text-center">
+                <div class="price_Card position-relative">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/label.png" class="label_img" alt="" />
+    
+                <span class="heading text-center"> <?php echo $row['plan_title']; ?> </span>
+                <h3 class="price_title text-center"><?php echo $row['plan_price']; ?></h3>
+                <span class="service text-center"><?php echo $row['plan_slogan']; ?></span>
+                <img src="<?php echo get_template_directory_uri(); ?>/images/Line 45.png" />
+                <?php foreach ($row['desc'] as $data) { ?>
+                    <div class="row">
+                        <div class="col-1">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/check.png" class="me-2 mb-2" alt="" />  
+                        </div>
+                        <div class="col-11">
+                        <p class="description text-start">
+                            <?php echo $data['list_title']; ?>
+                        </p>
+                        </div>
+                    </div>
+                <?php }; ?>    
+                <button class="btn btn_theme">Get Started</button>
+                </div>
             </div>
-          </div>
-        <?php }; ?>
+         <?php }; ?>
+        </div>
       </div>
-    </div>
 
 <?php
   }

@@ -74,7 +74,7 @@ class Video_Section_Widget extends Widget_Base {
             <div class="container">
                 <div class="row">
                     <div class="col-12 text-center">
-                        <p class="title_video mt-5"><?php echo esc_html($settings['title']); ?></p>
+                        <p class="title_video"><?php echo esc_html($settings['title']); ?></p>
                         <a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/down_gray.png" /></a>
                     </div>
                     <div class="col-12">
@@ -97,7 +97,7 @@ class Video_Section_Widget extends Widget_Base {
             <div class="container">
                 <div class="row">
                     <div class="col-12 text-center">
-                        <p class="title_video mt-5">{{{ settings.title }}}</p>
+                        <p class="title_video">{{{ settings.title }}}</p>
                         <a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/down_gray.png" /></a>
                     </div>
                     <div class="col-12">

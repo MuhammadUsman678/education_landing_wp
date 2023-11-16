@@ -105,29 +105,48 @@ class Testimonials_Widget extends Widget_Base
           </div>
         </div>
       </div>
-      <div class="container">
+		
+		<div class="container">
         <div class="video_slider">
-          <div id="myCarousel" class="carousel slide container" data-bs-ride="carousel">
+          <div
+            id="myCarousel"
+            class="carousel slide container"
+            data-bs-ride="carousel"
+          >
             <div class="carousel-inner w-100">
-            <?php foreach ($settings['list'] as $video) { ?>
-              <div class="carousel-item">
-                <div class="col-lg-4 col-12">
-                  <div class="card card-body video_card">
-                    <iframe class="embed-responsive-item w-100 video_3" src="<?php echo $video['video_url']['url']; ?>"></iframe>
-                  </div>
-                </div>
-              </div>
-              <?php } ; ?>
-              
+			  <?php foreach ($settings['list'] as $key=>$video) { ?>
+				  <div class="carousel-item <?php echo ($key==0) ? 'active' : '' ?>">
+					<div class="col-lg-4 col-12">
+					  <div class="card card-body video_card">
+						<iframe
+						  class="embed-responsive-item w-100 video_3"
+						  src="<?php echo $video['video_url']['url']; ?>"
+						></iframe>
+					  </div>
+					</div>
+				  </div>
+			  <?php } ; ?>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide="prev"
+            >
               <span aria-hidden="true">
-                <img src="<?php echo get_template_directory_uri() ?>/images/slider-prev.png" alt="" /></span>
+                <img src="<?php echo get_template_directory_uri(); ?>/images/slider-prev.png" alt=""
+              /></span>
               <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide="next"
+            >
               <span aria-hidden="true">
-                <img src="<?php echo get_template_directory_uri() ?>/images/slider-next.png" alt="" /></span>
+                <img src="<?php echo get_template_directory_uri(); ?>/images/slider-next.png" alt=""
+              /></span>
               <span class="visually-hidden">Next</span>
             </button>
           </div>

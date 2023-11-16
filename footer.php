@@ -4,7 +4,7 @@
             <div class="col-lg-12 text-center mt-5">
             <img src="<?php echo esc_url(get_theme_mod('footer_logo_setting', get_template_directory_uri() . '/images/new_footer_logo.png')); ?>" alt="Footer Logo">
             </div>
-            <div class="col-lg-12 text-center my-5">
+            <div class="col-lg-12 text-center mt-5 mb-4">
                 <?php
                 wp_nav_menu(
                     array(
@@ -14,6 +14,7 @@
                 );
                 ?>
             </div>
+			<hr class="text-white">
             <div class="col-lg-6 text-lg-start text-center">
                 <p class="copy_right"><?php echo get_theme_mod('footer_text_setting', '© ' . date('Y') . ' Your Site. All Rights Reserved.'); ?>.</p>
             </div>
