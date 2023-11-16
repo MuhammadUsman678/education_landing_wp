@@ -487,6 +487,25 @@ footer {
   margin-right: 16px;
 }
 
+.footer_links > ul {
+  display: inline-flex;
+}
+
+.footer_links > ul > li {
+  list-style: none;
+}
+
+
+.footer_links > ul > li > a {
+  color: var(--gray-200, #eaecf0);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  text-decoration: none;
+  margin-right: 16px;
+}
+
 .copy_right {
   color: var(--gray-300, #d0d5dd);
   font-size: 16px;
@@ -549,4 +568,13 @@ footer {
   body {
     overflow-x: hidden !important ;
   }
+}
+
+
+.elementor-element[data-element_type="container"]{
+  padding:0px !important;
+}
+
+.check-img{
+max-width:unset !important;
 }
