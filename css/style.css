@@ -3,10 +3,28 @@
 
 body {
     /* Use Inter as the default font for the body */
-    font-family: 'Inter', sans-serif !important;
+    font-family: 'Inter Medium', sans-serif !important;
 }
 
 *{
+
+  font-family: 'Inter Medium', sans-serif !important;
+
+}
+
+p{
+
+  font-family: 'Inter Medium', sans-serif !important;
+
+}
+
+h1 , h1 , h3 , h4 , h5 , h6{
+
+  font-family: 'Inter Medium', sans-serif !important;
+
+}
+
+span{
 
   font-family: 'Inter Medium', sans-serif !important;
 
