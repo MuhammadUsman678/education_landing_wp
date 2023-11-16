@@ -1,50 +1,29 @@
 /* Utility Css */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
 
-body {
-    /* Use Inter as the default font for the body */
-    font-family: 'Inter Medium', sans-serif !important;
-}
-
 *{
 
   font-family: 'Inter Medium', sans-serif !important;
 
 }
 
-p{
-
-  font-family: 'Inter Medium', sans-serif !important;
-
-}
-
-h1 , h1 , h3 , h4 , h5 , h6{
-
-  font-family: 'Inter Medium', sans-serif !important;
-
-}
-
-span{
-
-  font-family: 'Inter Medium', sans-serif !important;
-
-}
 
 .btn_theme {
   border-radius: 8px !important;
-  border: 1px solid var(--Red---500, #ff3b72) !important;
-  background: var(--Red---500, #ff3b72) !important;
-  color: var(--base-white, #fff) !important;
-  font-size: 20px !important;
-  font-style: normal !important;
-  font-weight: 600 !important;
-  line-height: normal !important;
-  padding: 12px 24px !important;
-  min-width: 200px;
-
-  /* Shadow/xs */
+  border: 1px solid var(--White, #ff3b72) !important;
+  color: #fff !important;
   box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05) !important;
-  height: 60px !important;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05) !important;
+  display: flex;
+  min-width: 200px;
+  height: 60px;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px !important;
+  font-family: 'Inter semi-bold', sans-serif !important;
+  background-color: #ff3b72 !important;
+  gap: 8px;
 }
 
 .btn_theme_dark {
@@ -60,7 +39,7 @@ span{
   height: 60px;
   padding: 12px 24px;
   justify-content: center;
-  font-size: 20px !important;
+  font-size: 16px !important;
 
   align-items: center;
   gap: 8px;
@@ -85,6 +64,7 @@ span{
   justify-content: center;
   align-items: center;
   font-size: 20px !important;
+  font-family: 'Inter semi-bold', sans-serif !important;
   gap: 8px;
 }
 
@@ -258,6 +238,11 @@ span{
   .offset-lg-cutom {
     margin-left: 12.33333333%;
   }
+
+  .img-card{
+
+    width: 365px !important;
+  }
 }
 
 .why_choose_title {
@@ -330,6 +315,8 @@ span{
 .img-card {
   border-radius: 20px;
   border: 1px solid #fff;
+  height: 397px !important;
+  width: 397.33px;
 }
 .carousel {
   height: 300px; /* Adjust the height as needed */
@@ -367,7 +354,7 @@ span{
 }
 
 .testimonials {
-  height: 1100px;
+  height: 1036px;
 }
 
 .video_card {
@@ -407,8 +394,7 @@ span{
   padding: 26px;
   flex-direction: column;
   gap: 24px;
-  width: 369px !important;
-  height: 438px !important;
+  width: 100% !important;
 }
 
 .price_Card_2 {
@@ -420,8 +406,8 @@ span{
   padding: 26px;
   flex-direction: column;
   gap: 24px;
-  width: 369px !important;
-  height: 438px !important;
+  width: 100% !important;
+  min-height: 470px !important;
 }
 
 /* .notForHome{
@@ -450,7 +436,6 @@ span{
 
 .service {
   color: var(--Grey-500, #8e8e8e);
-  font-family: Inter;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
